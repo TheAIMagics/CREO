@@ -7,6 +7,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { PaymentComponent } from './payment/payment.component';
 
 import { CartComponent } from './cart/cart.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,10 @@ import { CartComponent } from './cart/cart.component';
     CartComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule
+    BrowserModule,AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBAVTl8BXKlG4v1jE2yqXcGmosJHbbWhX0'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

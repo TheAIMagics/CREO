@@ -1,0 +1,16 @@
+agm-map {
+    height: 250px;
+  }
+
+  #heading{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 25px;
+    font-weight: none;
+}
+h6{
+  color: #cccccc  ;
+}
+.box {
+  margin-right: 25px;
+}

@@ -1,3 +1,59 @@
-<p>
-  shipping works!
-</p>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<h5 id="heading">Shipping Information</h5>
+
+<div class="row" style="border:1px solid lightgrey">
+    <div class="col-xs-6 col-sm-6">
+        <h6  style="margin-top:35px;"> Jamy Larson</h6>
+        <h6 >Unit 2 GreenMount Retail Park</h6>
+        <h6>Halifax</h6>
+        <h6>HX1 SQN</h6>
+        <h6>Tel: 0344 332 5931</h6>
+        
+            <a href=# style="margin-right: 15px;">Edit Address</a>  <a href=#>Add New</a> 
+       
+    </div>
+    <div class="col-xs-6 col-sm-6">
+        <agm-map [latitude]="latitude" [longitude]="longitude" (click)="onChoseLocation($event)"></agm-map>
+    </div>
+</div>
+
+
+<h5 id="heading">Shipping Method</h5>
+
+<div class="row" >
+    <div class="col-xs-5 col-sm-5 box" 
+    style="border:1px solid lightgrey;padding:15px;">
+        <div class="radio" >
+            <label><input type="radio" name="optradio" checked>
+                Standard Delivery <span class="float-right">Free</span>
+               <p class="text-muted">
+                 <br>
+                Estimated 14-20 Day Shipping
+                <br>
+                 (Duties and taxes may be due upon delivery)
+               </p> </label>
+          </div>
+    </div>
+    <div class="col-xs-5 col-sm-5 " style="border:1px solid lightgrey;padding:15px;">
+        <div class="radio" >
+            <label><input type="radio" name="optradio" checked>
+                Fast Delivery <span class="float-right"> $8.00</span>
+               <p class="text-muted">
+                 <br>
+                Estimated 14-20 Day Shipping
+                <br>
+                 (Duties and taxes may be due upon delivery)
+               </p> </label>
+          </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 25px;">
+        <a href="#" class="float-left">
+            <i class="fa fa-arrow-left"></i> Back to Customer Info</a>
+    <button class="btn-primary btn-lg float-right">CONTINUE TO PAYMENT</button>
+
+</div>
