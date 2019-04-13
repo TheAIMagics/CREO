@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule} from '@angular/forms'
 import { AppRoutingModule} from './app-routing.module'
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
@@ -19,6 +20,7 @@ import { AgmCoreModule } from '@agm/core';
   ],
   imports: [
     BrowserModule,AppRoutingModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBAVTl8BXKlG4v1jE2yqXcGmosJHbbWhX0'
     })

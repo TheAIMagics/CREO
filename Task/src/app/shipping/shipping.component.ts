@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-shipping',
@@ -10,13 +11,16 @@ export class ShippingComponent implements OnInit {
   latitude: number = 51.678418;
   longitude: number = 7.809007;
 
-  constructor() { }
+  constructor( private router: Router  ) { }
 
   ngOnInit() {
   }
 
   onChoseLocation( event ){
     console.log( event );
+  }
+  onContinuePayment(){
+    this.router.navigate(['/payment'])
   }
 
 }

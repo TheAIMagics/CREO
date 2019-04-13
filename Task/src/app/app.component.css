@@ -1,0 +1,19 @@
+.nav-tabs{
+    overflow: hidden;
+}
+.nav-item a{
+    display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+.nav-item a:hover{
+    border-bottom: 5px solid black;
+}
+.nav-item a.active{
+    border-bottom: 5px solid black;
+    color: black;
+}

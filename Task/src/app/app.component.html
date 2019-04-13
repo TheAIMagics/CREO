@@ -1,22 +1,23 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-7">
-      <div class="container">
+      
         <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="/customer">01. CUSTOMER INFO</a>
+          <li class="nav-item" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link active"  routerLink="/">01. CUSTOMER INFO</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/shipping">02. SHIPPING INFO</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " routerLink="/shipping">02. SHIPPING INFO</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/payment">03.PAYMENT SELECTION</a>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " routerLink="/payment">03.PAYMENT SELECTION</a>
           </li>
         </ul> 
       
         <router-outlet></router-outlet>
     
-    </div>
+    
     
     </div>
     <div class="col-sm-5">

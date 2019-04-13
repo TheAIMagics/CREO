@@ -38,7 +38,7 @@
     </div>
     <div class="col-xs-5 col-sm-5 " style="border:1px solid lightgrey;padding:15px;">
         <div class="radio" >
-            <label><input type="radio" name="optradio" checked>
+            <label><input type="radio" name="optradio" >
                 Fast Delivery <span class="float-right"> $8.00</span>
                <p class="text-muted">
                  <br>
@@ -52,8 +52,8 @@
 
 
 <div class="container" style="margin-top: 25px;">
-        <a href="#" class="float-left">
+        <a routerLink="/" class="float-left">
             <i class="fa fa-arrow-left"></i> Back to Customer Info</a>
-    <button class="btn-primary btn-lg float-right">CONTINUE TO PAYMENT</button>
+    <button class="btn-primary btn-lg float-right" (click)="onContinuePayment()">CONTINUE TO PAYMENT</button>
 
 </div>

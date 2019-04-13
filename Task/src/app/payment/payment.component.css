@@ -11,13 +11,13 @@ input {
     
   }
   .fa {
-     position: absolute;
-     top: 50px; 
-     right: 30px; 
+    position: absolute;
+    top: 50px; 
+    right: 30px; 
      }
-    
-    #arrow{
-        top: 0px;
-        right:0px;
-        position: relative;
+     
+#arrow{
+    top: 0px;
+    right:0px;
+    position: relative;
     }
